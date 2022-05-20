@@ -20,7 +20,7 @@ export default {
    TodoList,
    TodoInput,
    TodoFooter,
-}
+},
 }
 </script>
 
