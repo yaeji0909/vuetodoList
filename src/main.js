@@ -1,8 +1,14 @@
 import Vue from 'vue'
 import App from './App.vue'
+import { library } from "@fortawesome/fontawesome-svg-core";
+import { faUserSecret } from "@fortawesome/free-solid-svg-icons";
+import {store} from './components/store/store'
 
-Vue.config.productionTip = false
+
+library.add(faUserSecret);
 
 new Vue({
-  render: h => h(App),
-}).$mount('#app')
+    el: '#app',
+    store,
+    render:h=>h(App)
+})
